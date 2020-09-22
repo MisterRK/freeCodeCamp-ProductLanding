@@ -10,12 +10,16 @@ window.addEventListener("DOMContentLoaded", (e) => {
       window.location.replace("https://www.freecodecamp.com/email-submit")
    })
 
+   let header = document.getElementById('header')
+   let sticky = header.offsetTop
+
+   window.onscroll = () => {
+      if(window.pageYOffset > sticky) {
+         header.classList.add('sticky')
+      } else {
+         header.classList.remove('sticky')
+      }
+   }
+   
 })
 
-// $("nav").find("a").click(function(e) {
-//    e.preventDefault();
-//    var section = $(this).attr("href");
-//    $("html, body").animate({
-//        scrollTop: $(section).offset().top
-//    });
-// });
