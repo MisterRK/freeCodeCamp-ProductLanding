@@ -7,7 +7,8 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
 			rel="stylesheet"
-		/>
+      />
+      <style>#logo{display: flex;}</style>
 		<title>PJ Fine Furniture</title>
 	</head>
 	<body>
@@ -21,7 +22,7 @@
 				<h1>PJ's Fine Furniture</h1>
 			</div>
 			<nav id="nav-bar">
-				<ul>
+				<ul id="nav-list">
 					<li><a class="nav-link" href="#about-us">About Us</a></li>
 					<li><a class="nav-link" href="#place-an-order">Place An Order</a></li>
 					<li><a class="nav-link" href="#get-a-quote">Get a Quote</a></li>
@@ -83,7 +84,7 @@
 			</section>
 			<section id="place-an-order">
 				<h2>Place your Order</h2>
-				<form id="order-form" action="">
+				<form id="order-form" action="https://www.freecodecamp.com/email-submit">
 					<div class="form-section">
 						<label for="name">Name:</label>
 						<input type="text" name="name" placeholder="Your Name" />
@@ -101,7 +102,7 @@
 						</select>
 					</div>
 					<div class="form-section">
-						<input id="form-submit-btn" type="submit" />
+						<input id="submit" type="submit" />
 					</div>
 				</form>
 			</section>
@@ -121,27 +122,32 @@
 					accumsan in nisl nisi scelerisque. Ut etiam sit amet nisl. Odio
 					facilisis mauris sit amet massa vitae tortor.
 				</p>
-			</section>
+         </section>
+         <section >
+            <h2>See Us in Action</h2>
+            <iframe id='video' src="https://www.youtube.com/embed/T2g6kGl66XU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe id='video' src="https://www.youtube.com/watch?v=T2g6kGl66XU" frameborder="0"></iframe> -->
+            <!-- <video id='video' src="https://www.youtube.com/watch?v=T2g6kGl66XU" controls>
+               <source src="https://www.youtube.com/watch?v=T2g6kGl66XU">
+            </video> -->
+         </section>
 			<section>
-				<form id="form">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
 					<label name="email">Join our mailing list:</label>
-					<input id="email" type="email" placeholder="Email Address" />
+					<input id="email" name='email' type="email" placeholder="Email Address" />
 					<button id="submit" type="submit">Submit</button>
 				</form>
 			</section>
 		</main>
-
+      <footer>
+         <p>Created for a freecodecamp project 2020</p>
+      </footer>
 		<script src="index.js"></script>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
 
 <!-- 
-User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
-
-User Story #6: I can watch an embedded product video with id="video".
-
-User Story #13: The navbar should always be at the top of the viewport.
 
 User Story #14: My product landing page should have at least one media query.
 

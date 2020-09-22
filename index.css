@@ -1,11 +1,9 @@
 * {
 	font-family: "Roboto", sans-serif;
 }
+
 html {
 	scroll-behavior: smooth;
-}
-#logo {
-	display: flex;
 }
 
 header{
@@ -22,6 +20,8 @@ header{
 #header-img {
 	width: 20%;
 }
+
+
 
 ul {
 	display: flex;
@@ -53,10 +53,38 @@ a {
 	margin: 2%;
 }
 
-#form-submit-btn {
+#submit {
 	width: 50%;
 }
 
 input {
 margin: .5%;
+}
+
+
+/* how to handle devices larger than a phone */
+@media (min-width: 500px){
+	#header-img {
+		width: 100px;
+	}
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#nav-bar {
+		width: 50%;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	section {
+		width: 50%;
+	}
+	#video {
+		width: 100%;
+		height: 500px;
+	}
 }
